@@ -128,7 +128,6 @@ list-style: none;
 .second-nav-link{
     text-align: center;
     display: grid;
-    text-transform: uppercase;
     text-decoration: none;
     font-size: 1.4rem;
     color: #009688;
@@ -197,7 +196,6 @@ list-style: none;
 .dropdown-list-link {
     font-size: 1.3rem;
     text-decoration: none;
-    text-transform: uppercase;
     color: #009688;
     margin: 0 0 1rem 1.6rem;
     display: block;
@@ -273,7 +271,7 @@ overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: :100%;
+    height: 100%;
 position: relative;
 }
 .slide img{
@@ -283,24 +281,6 @@ position: relative;
     object-fit:cover;
 
 }
-
-@keyframes slideshow{
-    0% {left:0}
-    10% {left:0}
-    15% {left:-100%}
-    25% {left:-100%}
-    30%{left:-200%}
-    40%{left:-200%}
-    45% {left:-300%}
-    55% {left:-300%}
-    60%{left:-200%}
-    70%{left:-200%}
-    75%{left:-100%}
-    85%{left:-100%}
-    90%{left:0}
-}
- 
-
 
 
 /* end banner */
@@ -346,7 +326,6 @@ position: relative;
     border:none;
     border-radius: 5rem;
     outline: none;
-    text-transform: uppercase;
     box-shadow: .2rem .2rem 1rem #777;
 
 }
@@ -564,7 +543,7 @@ transition: background-color .2s;
     z-index: 1000;
     display: grid;
     padding: 2rem;
-    border: .1rem solid #34598f;
+    border: .1rem solid #1f1f1f;
     border-radius: .3rem;
     display: none;
 
@@ -577,11 +556,9 @@ transition: background-color .2s;
 .show-form-btn {
     flex: 0 1 50%;
     background-color: #00796b;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #fff;
     padding: 1rem;
-    text-transform: uppercase;
-    letter-spacing: .2rem;
     text-align: center;
     border: .1rem solid #eee;
     cursor: pointer;
@@ -589,7 +566,6 @@ transition: background-color .2s;
 .form-heading {
     font-size: 2rem;
     color: #009688;
-    text-transform: uppercase;
     padding: 1rem 0 0 .2rem;
 }
 .forms-wrapper form {
@@ -621,14 +597,15 @@ transition: background-color .2s;
     width: 35%;
     background-color: #d38800;
     color: #fff;
-    letter-spacing: .3rem;
     padding: 1rem;
     border: none;
+    font-size: 1.5rem;
+    font-weight: 600;
     margin-top: .5rem;
 }
 .x-btn {
     font-size: 2rem;
-    color: #00154c;
+    color: #1f1f1f;
     font-weight: bolder;
     position: absolute; 
     bottom: 3.3rem;
@@ -772,22 +749,6 @@ transition: background-color .2s;
 
     }
 
-    .slide-btn-1 {
-        left: 45.5%;
-    }
-    
-    .slide-btn-2 {
-        left: 48.5%;
-    }
-    
-    .slide-btn-3 {
-        left: 51.5%;
-    }
-    
-    .slide-btn-4 {
-        left: 54.5%;
-    }
-
     .day-offer-heading {
         font-size: 4rem;
     }
@@ -802,7 +763,7 @@ transition: background-color .2s;
     }
 
 }
-@media(max-width: 600px) {
+@media(max-width: 607px) {
     .container {
         grid-template-columns: minmax(1rem, 1fr) repeat(8, minmax(min-content, 16rem)) minmax(1rem, 1fr);
     }
@@ -839,21 +800,6 @@ transition: background-color .2s;
         top: 90%;
     }
 
-    .slide-btn-1 {
-        left: 44%;
-    }
-    
-    .slide-btn-2 {
-        left: 48%;
-    }
-    
-    .slide-btn-3 {
-        left: 52%;
-    }
-    
-    .slide-btn-4 {
-        left: 56%;
-    }
 
     .day-offer {
         grid-column-gap: 1.4rem;
@@ -892,23 +838,33 @@ transition: background-color .2s;
     }
 }
 
-@media (min-width: 599px) and (max-width: 600px) {
+@media (min-width: 599px) and (max-width: 605px) {
     .banner-btn {
-        transform: translate(4rem,-3rem);
+        /* transform: translate(rem,2rem); */
+                transform: translate(-1rem,1rem);
+
         height: 3.5rem;
         display: flex;
         gap: 10px; 
         margin-bottom: 1rem;
     }
+    .banner-heading{
+        display: none;
+    }
   }
 
   @media (max-width: 599px) {
     .banner-btn {
-        transform: translate(4rem,-3rem);
+        /* transform: translate(-30rem,8rem); */
+        transform: translate(-1rem,1rem);
+
         height: 3.5rem;
         display: flex;
         gap: 10px; 
         margin-bottom: 1rem;
 
+    }
+    .banner-heading{
+        display: none;
     }
   }
